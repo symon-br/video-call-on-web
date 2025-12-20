@@ -7,12 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+    <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+    </ul>
+</nav>
     <a href="http://github.com/symon-br"> Go through this.</a>
     <button type="button" onclick="window.location.href='http://github.com/symon-br'">Click Me!</button>
 
-    <video id="cameraFeed" autoplay>
+   <video id="cameraFeed" muted playsinline></video>
+   
+    <button id="start-button">Turn Camera On</button>
+    <button id="stop-button" disabled>Turn Camera Off</button>
+    <br><br>
 
-    </video>
+
+    <label for="country-select">Select your country:</label>
+<select id="country-select" onchange="switchCountry()">
+    <option value="index.html">United States</option>
+    <option value="jp/index.html">Japan</option>
+    <option value="fr/index.html">France</option>
+    <!-- Add more options for other countries, linking to specific URLs -->
+</select>
+
 </body>
 <script src="script.js"></script>
+<script src="switch.js"></script>
+<script src="cameraonoff.js"></script>
 </html>
