@@ -32,9 +32,14 @@ script {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0.4em;
     overflow: hidden;
     background-color: #333;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 nav ul li {
     float: left;
@@ -48,4 +53,70 @@ nav ul li a {
 }
 nav ul li a:hover {
     background-color: #111;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #a3aaa8;
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+select {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+select:hover {
+    border-color: #888;
+}
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+option {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+option:hover {
+    background-color: #f1f1f1;
+}
+option:checked {
+    background-color: #4CAF50;
+    color: white;
+}
+option:focus {
+    outline: none;
+    background-color: #ddd;
+}
+
+a:hover {
+    background-color: darkviolet;
+}
+a:active {
+    background-color: indigo;
+}
+a:visited {
+    background-color: purple;
+}
+a:focus {
+    outline: 2px solid yellow;
 }
